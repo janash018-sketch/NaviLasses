@@ -1,0 +1,16 @@
+keys
+wallet
+glasses
+sunglasses
+charger
+medicine
+headphones
+pen
+pencil
+id card
+credit card
+remote
+cup
+bottle
+phone
+book

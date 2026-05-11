@@ -1,0 +1,49 @@
+name: my_first_app
+description: "NaviGlasses — voice-guided accessibility app for iOS."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # TTS — uses AVSpeechSynthesizer on iOS
+  flutter_tts: ^3.8.3
+
+  # STT — uses iOS SFSpeechRecognizer
+  speech_to_text: ^6.6.2
+
+  # Live camera preview (BanknoteScreen, ObstacleScreen)
+  camera: ^0.11.0+2
+
+  # Image decoding for TFLite pre-processing
+  image: ^4.1.3
+
+  # On-device TFLite inference (banknote model)
+  tflite_flutter: ^0.12.1
+
+  # HTTP client for Scene Description (OpenAI)
+  http: ^1.2.0
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/jordanian_banknote.tflite
+    - assets/ocr_model.tflite
+    - assets/vision_assist.tflite
+    - assets/vision_assist_labels.txt
+    - assets/yolov8n.tflite
+    - assets/yolov8n_labels.txt
